@@ -2,8 +2,8 @@
 
 ## Run demo in one-click
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/adyen-examples/adyen-node-online-payments/tree/main/paybylink-example)  
-&nbsp;[First time with Gitpod?](https://github.com/adyen-examples/.github/blob/main/pages/gitpod-get-started.md)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/tungtf/sample/tree/master)  
+&nbsp;[First time with Gitpod?](git add .https://github.com/adyen-examples/.github/blob/main/pages/gitpod-get-started.md)
 
 # Description
 
