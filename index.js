@@ -31,8 +31,10 @@ dotenv.config({
 const config = new Config();
 config.apiKey = process.env.ADYEN_API_KEY;
 
+console.log(process.env.ADYEN_LIVE_PREFIX);
+
 const client = new Client({ config });
-client.setEnvironment("LIVE",process.env.ADYEN_LIVE_PREFIX);  // change to LIVE for production
+client.setEnvironment("LIVE", process.env.ADYEN_LIVE_PREFIX);  // change to LIVE for production
 checkoutService = new CheckoutAPI(client);
 
 app.engine(
