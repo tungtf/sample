@@ -1,5 +1,5 @@
 <div class="main-container">
-  <div class="info-mainsection">
+  <!-- div class="info-mainsection">
     <h1>Pay By Link Demo</h1>
     <p>To use this interactive example of Pay By Link, provide an <b>amount</b> in minor units (e.g. 1000 = 10 EUR) and <b>reference</b> (guid). Set <b>isReusable</b> to <i>true</i> to accept multiple payments per payment link.</p>
     <p>
@@ -10,24 +10,24 @@
     <p>To learn more about payment links, read our <a href="https://www.adyen.com/blog/pay-by-link-for-developers">blog</a> or
       check out our <a href="https://docs.adyen.com/unified-commerce/pay-by-link">documentation</a> .
     </p>
-  </div>
+  </div -->
 
   <div class="info-subsection">
     <!-- Section for creating a new payment link -->
     <section class="create-pay-by-link">
-      <h3>Create new payment link</h3>
+      <h3>New payment</h3>
       <div class="create-new-link">
         <div class="create-new-link-element">
-        Amount: <input type="text" id="amount" placeholder="€"/>
+        Amount: <input type="text" id="amount" placeholder="$"/>
         </div>
 
         <div class="create-new-link-element">
         Reference: <input type="text" id="reference" placeholder="my-ref-0001"/> 
         </div>
 
-        <div class="create-new-link-element">
+        <!-- div class="create-new-link-element">
         IsReusable: <input type="checkbox" id="isreusable"/>
-        </div>
+        </div -->
         <button id="create-new-link" class="create-new-link-button" onclick="createPaymentLink()">Create!</button>
       </div>
     </section>
