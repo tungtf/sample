@@ -34,7 +34,7 @@ config.apiKey = "AQEyhmfxKI3JbhJDw0m/n3Q5qf3VeIpUAJZETHZ7x3yuu2dYhz1/e5n9eA6H2QF
 console.log(process.env.ADYEN_LIVE_PREFIX);
 
 const client = new Client({ config });
-client.setEnvironment("LIVE", "bde4406340-PaymentsMadeEasy");  // change to LIVE for production
+client.setEnvironment("LIVE", "4f4b1ebde4406340-PaymentsMadeEasy");  // change to LIVE for production
 checkoutService = new CheckoutAPI(client);
 
 app.engine(
