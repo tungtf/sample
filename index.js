@@ -30,8 +30,9 @@ dotenv.config({
 // Adyen Node.js API library boilerplate (configuration, etc.)
 const config = new Config();
 config.apiKey = process.env.ADYEN_API_KEY;
+
 const client = new Client({ config });
-client.setEnvironment("TEST");  // change to LIVE for production
+client.setEnvironment("LIVE",process.env.ADYEN_LIVE_PREFIX);  // change to LIVE for production
 checkoutService = new CheckoutAPI(client);
 
 app.engine(
@@ -57,7 +58,7 @@ app.post("/api/links", async (req, res) => {
 
     const response = await checkoutService.PaymentLinksApi.paymentLinks({
       merchantAccount: process.env.ADYEN_MERCHANT_ACCOUNT, // required
-      amount: { currency: "EUR", value: req.body.Amount }, // value is 100€ in minor units
+      amount: { currency: "SGD", value: req.body.Amount }, // value is 100 SGD in minor units
       reference: req.body.Reference,
       reusable: req.body.IsReusable,
       returnUrl: `${protocol}://${localhost}/`, // set redirect URL after payment
