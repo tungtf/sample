@@ -29,12 +29,12 @@ dotenv.config({
 
 // Adyen Node.js API library boilerplate (configuration, etc.)
 const config = new Config();
-config.apiKey = process.env.ADYEN_API_KEY;
+config.apiKey = "AQEyhmfxKI3JbhJDw0m/n3Q5qf3VeIpUAJZETHZ7x3yuu2dYhz1/e5n9eA6H2QFIJxAwzEsQwV1bDb7kfNy1WIxIIkxgBw==-FCDGHJtkW9u+/+XNpggLCgJtJEOHN/hwL1mShCj1Adk=-i1i[A}4$Se5{65z@W:Z";
 
 console.log(process.env.ADYEN_LIVE_PREFIX);
 
 const client = new Client({ config });
-client.setEnvironment("LIVE", process.env.ADYEN_LIVE_PREFIX);  // change to LIVE for production
+client.setEnvironment("LIVE", "bde4406340-PaymentsMadeEasy");  // change to LIVE for production
 checkoutService = new CheckoutAPI(client);
 
 app.engine(
@@ -59,7 +59,7 @@ app.post("/api/links", async (req, res) => {
   try {
 
     const response = await checkoutService.PaymentLinksApi.paymentLinks({
-      merchantAccount: process.env.ADYEN_MERCHANT_ACCOUNT, // required
+      merchantAccount: "PME_POS_SG", // required
       amount: { currency: "SGD", value: req.body.Amount }, // value is 100 SGD in minor units
       reference: req.body.Reference,
       reusable: req.body.IsReusable,
