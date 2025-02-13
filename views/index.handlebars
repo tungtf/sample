@@ -20,14 +20,15 @@
         <div class="create-new-link-element">
         Amount: <input type="text" id="amount" placeholder="$"/>
         </div>
-
+        <br/>
         <div class="create-new-link-element">
-        Reference: <input type="text" id="reference" placeholder="my-ref-0001"/> 
+        Reference: <input type="text" id="reference" placeholder=""/> 
         </div>
-
+        <br/>
         <div style="display: none;" class="create-new-link-element">
         IsReusable: <input type="checkbox" id="isreusable"/>
         </div>
+        <br/>
         <button id="create-new-link" class="create-new-link-button" onclick="createPaymentLink()">Create!</button>
       </div>
     </section>
@@ -38,7 +39,7 @@
     <h3>Payments</h3>
     <div class="payment-links">
       <div class="table">
-      <div class="row">
+      <div style="display: none;" class="row">
         <div class="header">Payment Id</div>
         <div class="header">Reference</div>
         <div style="display: none;" class="header">ExpiresAt</div>
