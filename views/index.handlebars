@@ -35,23 +35,23 @@
 
  <!-- Section that shows all payment links -->
   <div class="info-subsection">
-    <h3>Payment links</h3>
+    <h3>Payments</h3>
     <div class="payment-links">
       <div class="table">
       <div class="row">
-        <div class="header">PaymentLinkId</div>
+        <div class="header">Payment Id</div>
         <div class="header">Reference</div>
-        <div class="header">ExpiresAt</div>
-        <div class="header">Status</div>
-        <div class="header">IsReusable</div>
+        <div style="display: none;" class="header">ExpiresAt</div>
+        <div style="display: none;" class="header">Status</div>
+        <div style="display: none;" class="header">IsReusable</div>
       </div>
       {{#each data}}
       <div class="row">
         <div class="cell"><a href="{{url}}" id="{{id}}">{{id}}</a></div>
         <div class="cell">{{reference}}</div>
-        <div class="cell"> {{expiresAt}}</div>
-        <div class="cell"> {{status}}</div>
-        <div class="cell"> {{isReusable}} </div>
+        <div style="display: none;" class="cell"> {{expiresAt}}</div>
+        <div style="display: none;" class="cell"> {{status}}</div>
+        <div style="display: none;" class="cell"> {{isReusable}} </div>
       </div>
       {{/each}}
       </div>
